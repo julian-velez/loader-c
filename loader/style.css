@@ -1,0 +1,42 @@
+body {
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.loader {
+    width: 250px;
+    height: 250px;
+    background-color: cyan;
+    clip-path: polygon(100% 100%, 100% 0, 1% 100%, 78% 100%, 0 100%, 0 0, 71% 71%);
+    animation: julian 0.5s linear infinite;
+    transition: 0.5s;
+    margin: 12px;
+}
+
+@keyframes julian {
+    0% {
+        transform: rotate(0deg);
+        background-color: cyan;
+    }
+    50% {
+        transform: rotate(180deg);
+        background-color: lime;
+    }
+    100% {
+        transform: rotate(360deg);
+        background-color: cyan;
+    }
+}
+
+.loader {
+    animation: julian 3s linear infinite;
+}
+
+
+
+
+
+
